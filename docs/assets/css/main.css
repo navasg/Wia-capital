@@ -1426,6 +1426,15 @@ header {
   }
 }
 
+.main-value .main-general__description {
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  overflow: hidden;
+}
+
 .main-value .main-value__content {
   display: flex;
   flex-wrap: wrap;
@@ -1439,6 +1448,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.main-value .main-value__card a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -1460,9 +1476,10 @@ header {
 }
 
 .main-value .main-value__card .main-value__title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 800;
   color: #232222;
+  text-align: center;
   margin-top: 1.5rem;
 }
 
@@ -1498,6 +1515,7 @@ header {
   background-image: url("../img/man-sitting-on-building-atop-715426.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .main-phrase .main-phrase__title {
@@ -1646,7 +1664,7 @@ header {
   padding: 2.5rem 0;
 }
 
-.main-footer .main-footer__rrss .main-footer__item:nth-child(2), .main-footer .main-footer__rrss .main-footer__item:nth-child(3) {
+.main-footer .main-footer__rrss .main-footer__item {
   display: flex;
   justify-content: center;
   flex-direction: column;

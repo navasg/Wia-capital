@@ -1,34 +1,35 @@
 !!!
-%html{ lang: 'en' }
+%html{:lang => "en"}
   %head
-    %meta{ charset: 'UTF-8' }/
-    %meta{ content: 'width=device-width, initial-scale=1.0', name:'viewport' }/
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %title Wia Capital
     %link{:crossorigin => "anonymous", :href => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", :integrity => "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", :rel => "stylesheet"}/
-    %link{ rel: 'stylesheet', href:'assets/css/font-awesome.css' }/
-    %link{ rel: 'stylesheet', href:'assets/css/font-awesome.css' }/
-    %link{ rel: 'stylesheet', href:'assets/css/slick-theme.css' }/
-    %link{ rel: 'stylesheet', href:'assets/css/slick.css' }/
-    %link{ rel: 'stylesheet', href:'assets/css/main.css' }/
-    %link{ rel: 'stylesheet', href:'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css' }/
+    %link{:href => "assets/css/font-awesome.css", :rel => "stylesheet"}/
+    %link{:href => "assets/css/font-awesome.css", :rel => "stylesheet"}/
+    %link{:href => "assets/css/slick-theme.css", :rel => "stylesheet"}/
+    %link{:href => "assets/css/slick.css", :rel => "stylesheet"}/
+    %link{:href => "assets/css/main.css", :rel => "stylesheet"}/
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css", :rel => "stylesheet"}/
     %link{:href => "assets/img/favicon.png", :rel => "shortcut icon"}/
-    %link{ href:'https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800|Poppins:100,200,300,400,500,600,700,800,900&display=swap',  rel:'stylesheet' }/
+    %link{:href => "https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800|Poppins:100,200,300,400,500,600,700,800,900&display=swap", :rel => "stylesheet"}/
   %body
     %header.fixed-top.navbar-fixed-js
       %nav.navbar.navbar-expand-lg
         .container
           .main-brand__top
             .main-brand
-              %a.navbar-brand{ :href => 'index.html' }
-                %img#iso{ :src => 'assets/img/WIACapitaltextblack.png', :alt=>"Logo Wia"}/ 
+              %a.navbar-brand{:href => "index.html"}
+                %img#iso{:alt => "Logo Wia", :src => "assets/img/WIACapitaltextblack.png"}/
           .main-brand__fixed
             .main-brand
-              %a.navbar-brand{ :href => 'index.html' }
-                %img#iso{ :src => 'assets/img/Logo-Vectores-WIACapital_2019.png', :alt=>"Logo Wia" }/ 
+              %a.navbar-brand{:href => "index.html"}
+                %img#iso{:alt => "Logo Wia", :src => "assets/img/Logo-Vectores-WIACapital_2019.png"}/
           .main-brand.brand-responsive
-            %a.navbar-brand{ :href => 'index.html' }
-              %img#iso{ :src => 'assets/img/Logo-Vectores-WIACapital_2019.png', :alt=>"Logo Wia"}/ 
-            %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{ 'data-toggle' => 'offcanvas', :type => 'button' }
+            %a.navbar-brand{:href => "index.html"}
+              %img#iso{:alt => "Logo Wia", :src => "assets/img/Logo-Vectores-WIACapital_2019.png"}/
+            %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{"data-toggle" => "offcanvas", :type => "button"}
               %span.hamburger-box
               %span.hamburger-inner
           .navbar-collapse.offcanvas-collapse
@@ -36,61 +37,17 @@
               %li.dropdown.nav-item
                 %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
                   Lorem Ipsum
-                -# %ul.dropdown-menu
-                -#   %li
-                -#     %a{:href => "attraction-and-talent-selection.html"} 
-                -#   %li
-                -#     %a{:href => "youth-program.html"} 
-                -#   %li
-                -#     %a{:href => "career-development.html"} 
-                -#   %li
-                -#     %a{:href => "evaluation-and-career.html"} Zona de Clientes
-                -#   %li
-                -#     %a{:href => "inhouse-consultant.html"} 
-                -#   %li
-                -#     %a{:href => "employer-brand.html"} Marca empleadora
               %li.dropdown.nav-item
                 %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
                   Lorem Ipsum
-                -# %ul.dropdown-menu
-                -#   %li
-                -#     %a{:href => "diversity-and-inclusion.html"} Diversidad e inclusión
-                -#   %li
-                -#     %a{:href => "future-of-work.html"} Futuro del trabajo
-                -#   %li
-                -#     %a{:href => "future-of-education.html"} Futuro de la educación
-                -#   %li
-                -#     %a{:href => "brand-building.html"} Construcción de marca empleadora
-                -#   %li
-                -#     %a{:href => "dream-race.html"} Carrera de los sueños de los jovenes
               %li.nav-item
-                %a.nav-link{:target=>"_blank", :data-toggle => 'offcanvas', :href => "https://www.elempleo.com/sitios-empresariales/colombia/consultores-organizacionales", :role => "button"}
+                %a.nav-link{:data => "offcanvas", :href => "https://www.elempleo.com/sitios-empresariales/colombia/consultores-organizacionales", :role => "button", :target => "_blank"}
                   Lorem Ipsum
-                -# %ul.dropdown-menu
-                -#   %li
-                -#     %a{:href => "index.html"} Media y alta gerencia
-                -#   %li
-                -#     %a{:href => "index.html"} Profesionales
               %li.dropdown.nav-item
                 %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
                   Lorem Ipsum
-                -# %ul.dropdown-menu
-                -#   %li
-                -#     %a{:href => "career-tips.html"} Consejos de carrera
-                -#   %li
-                -#     %a{:href => "human-management.html"} Gestión humana como aliado estratégico del negocio 
               %li.nav-item
-                %a.nav-link{:href => 'about.html',:data-toggle => 'offcanvas' } Lorem Ipsum
-
-            -# %ul.main-rrss__responsive
-            -#   %li
-            -#     %img{:src=>'assets/img/facebook@3x.png'}
-            -#   %li
-            -#     %img{:src=>'assets/img/facebook-logo-in-circular-button-outlined-social-symbol_2@3x.png'}
-            -#   %li
-            -#     %img{:src=>'assets/img/social-linkedin-circular-button_5@3x.png'}
-            -#   %li
-            -#     %img{:src=>'assets/img/social-linkedin-circular-button_6@3x.png'}
+                %a.nav-link{:data => "offcanvas", :href => "about.html"} Lorem Ipsum
     %section.main-banner
       .main-general__line.main-general__line--opacity
       .main-general__line.main-general__line--solid
@@ -98,13 +55,13 @@
         .main-banner__item
           .main-banner__text
             .main-banner__title
-              %p.wow.animated.fadeInRight{:style=>"visibility: visible; animation-delay: .s  ;"} 
+              %p.wow.animated.fadeInRight{:style => "visibility: visible; animation-delay: .3s  ;"}
                 Wia Capital
             .main-banner__subtitle
-              %p.wow.animated.fadeInRight{:style=>"visibility: visible; animation-delay: .5s  ;"}  
-                Worldwide business 
+              %p.wow.animated.fadeInRight{:style => "visibility: visible; animation-delay: .5s  ;"}
+                Worldwide business
           .main-banner__img
-            %img{:src=>"assets/img/man-beach-holiday-woman-39691.png", :alt=>"Imagen Banner"}/
+            %img{:alt => "Imagen Banner", :src => "assets/img/man-beach-holiday-woman-39691.png"}/
     %section.main-about
       .container.padding-top-bottom
         .container-grid
@@ -112,89 +69,155 @@
             %h2.main-general__title
               Nuestra Misión
             %p.main-general__description
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              Brindamos asesoría integral  para un reconocimiento objetivo de las necesidades de nuestros clientes de manera personalizada  para así ofrecer los mejores planes  que garanticen el bienestar a sus seres queridos, aliados y empresas que confían en nuestra ética y profesionalismo alrededor del mundo. 
           .main-about__img
             .main-general__line.main-general__line--opacity-left
             .main-general__line.main-general__line--solid-left
-            %img{'data-src'=>"assets/img/man-standing-beside-his-wife-teaching-their-child-how-to-1128318@2x.png", :alt=>"Imagen misión"}/
+            %img{:alt => "Imagen misión", "data-src" => "assets/img/man-standing-beside-his-wife-teaching-their-child-how-to-1128318@2x.png"}/
           .main-about__img
             .main-general__line.main-general__line--opacity-right
             .main-general__line.main-general__line--solid-right
-            %img{'data-src'=>"assets/img/family-of-four-walking-at-the-street-2253879.jpg", :alt=>"Imagen visión"}/
+            %img{:alt => "Imagen visión", "data-src" => "assets/img/family-of-four-walking-at-the-street-2253879.jpg"}/
           .main-about__text
             %h2.main-general__title
               Nuestra Visión
             %p.main-general__description
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+              Somos y seguiremos siendo un equipo de profesionales que lleva un mensaje a toda la familia latinoamericana, y a todo el mundo, de la importancia del blindaje del patrimonio a través de herramientas y opciones que le permitirán sentirse tranquilo al pensar en su futuro global.
     %section.main-value
       .container.padding-top-bottom
         %h2.main-general__title
           Nuestros Valores
         .main-value__content
           .main-value__card
-            %img.main-value__img{'data-src'=>"assets/img/respect icon@3x.png", :alt=>"icono valor"}/
-            %p.main-value__title
-              Póliza de Vida
-            %p.main-general__description
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+            %a{"data-target" => "#exampleModal", "data-toggle" => "modal"}
+              %img.main-value__img{:alt => "icono valor", "data-src" => "assets/img/respect icon@3x.png"}/
+              %p.main-value__title
+                Blindaje de vida
+              %p.main-general__description
+                El futuro de su familia y de su empresa estará libre de riesgos cuando usted, que es el principal activo de su hogar y de su empresa, pueda materializar la tranquilidad de todos bajo la premisa de estar blindado con las empresas más sólidas de la industria.
+
+            / Modal
+            #exampleModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+              .modal-dialog{:role => "document"}
+                .modal-content
+                  .modal-header
+                    %h5#exampleModalLabel.modal-title.main-value__title Blindaje de vida
+                    %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+                      %span{"aria-hidden" => "true"} ×
+                  .modal-body
+                    El futuro de su familia y de su empresa estará libre de riesgos cuando usted, que es el principal activo de su hogar y de su empresa, pueda materializar la tranquilidad de todos bajo la premisa de estar blindado con las empresas más sólidas de la industria.
+                  .modal-footer
+                 
+                 
           .main-value__card
-            %img.main-value__img{'data-src'=>"assets/img/heart icon@3x.png", :alt=>"icono valor"}/
-            %p.main-value__title
-              Póliza de Vida
-            %p.main-general__description
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+            %a{"data-target" => "#exampleModal2", "data-toggle" => "modal"}
+              %img.main-value__img{:alt => "icono valor", "data-src" => "assets/img/heart icon@3x.png"}/
+              %p.main-value__title
+                Blindaje de Salud
+              %p.main-general__description
+                Nuestra salud, la de nuestra familia y personas claves son prioridad; por ello, al momento de tomar la decisión correcta debemos estar con una empresa que nos permita tener una cobertura en cualquier rincón del mundo. Contamos como aliados con las mejores instituciones de salud de prestigio y con los más altos estándares de calidad a nivel mundial.
+              / Modal
+            #exampleModal2.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+              .modal-dialog{:role => "document"}
+                .modal-content
+                  .modal-header
+                    %h5#exampleModalLabel.modal-title.main-value__title Blindaje de Salud
+                    %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+                      %span{"aria-hidden" => "true"} ×
+                  .modal-body
+                    Nuestra salud, la de nuestra familia y personas claves son prioridad; por ello, al momento de tomar la decisión correcta debemos estar con una empresa que nos permita tener una cobertura en cualquier rincón del mundo. Contamos como aliados con las mejores instituciones de salud de prestigio y con los más altos estándares de calidad a nivel mundial.
+                  .modal-footer
           .main-value__card
-            %img.main-value__img{'data-src'=>"assets/img/outline icon@3x.png", :alt=>"icono valor"}/
-            %p.main-value__title
-              Póliza de Vida
-            %p.main-general__description
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+            %a{"data-target" => "#exampleModal3", "data-toggle" => "modal"}
+              %img.main-value__img{:alt => "icono valor", "data-src" => "assets/img/outline icon@3x.png"}/
+              %p.main-value__title
+                Blindaje de Inversión
+              %p.main-general__description
+                Inversión es la palabra que todo jefe de familia y empresario lleva presente como parte de su proceso de ahorro y planificación estratégica personal y empresarial. Brindamos las mejores opciones del mercado con empresas de reconocimiento, con planes acorde a sus necesidades y su visualización a futuro, sin que ningún acontecimiento económico afecte su rentabilidad.
+            #exampleModal3.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+              .modal-dialog{:role => "document"}
+                .modal-content
+                  .modal-header
+                    %h5#exampleModalLabel.modal-title.main-value__title Blindaje de Inversión
+                    %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+                      %span{"aria-hidden" => "true"} ×
+                  .modal-body
+                    Inversión es la palabra que todo jefe de familia y empresario lleva presente como parte de su proceso de ahorro y planificación estratégica personal y empresarial. Brindamos las mejores opciones del mercado con empresas de reconocimiento, con planes acorde a sus necesidades y su visualización a futuro, sin que ningún acontecimiento económico afecte su rentabilidad.
+                  .modal-footer
           .main-value__card
-            %img.main-value__img{'data-src'=>"assets/img/outline icon_2@3x.png", :alt=>"icono valor"}/
-            %p.main-value__title
-              Póliza de Vida
-            %p.main-general__description
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+            %a{"data-target" => "#exampleModal4", "data-toggle" => "modal"}
+              %img.main-value__img{:alt => "icono valor", "data-src" => "assets/img/outline icon_2@3x.png"}/
+              %p.main-value__title
+                Blindaje de Viajero
+              %p.main-general__description
+                Disfrute cada minuto sabiendo que está protegido durante todo el proceso de viaje a cualquier parte del mundo donde decida emprender su camino en sus vacaciones o viajes de negocios, amparado por empresas líderes en el mercado.
+            #exampleModal4.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+              .modal-dialog{:role => "document"}
+                .modal-content
+                  .modal-header
+                    %h5#exampleModalLabel.modal-title.main-value__title Blindaje de Viajero
+                    %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+                      %span{"aria-hidden" => "true"} ×
+                  .modal-body
+                    Disfrute cada minuto sabiendo que está protegido durante todo el proceso de viaje a cualquier parte del mundo donde decida emprender su camino en sus vacaciones o viajes de negocios, amparado por empresas líderes en el mercado.
+                  .modal-footer
           .main-value__card
-            %img.main-value__img{'data-src'=>"assets/img/insurance-icon@3x.png", :alt=>"icono valor"}/
-            %p.main-value__title
-              Póliza de Vida
-            %p.main-general__description
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+            %a{"data-target" => "#exampleModal5", "data-toggle" => "modal"}
+              %img.main-value__img{:alt => "icono valor", "data-src" => "assets/img/insurance-icon@3x.png"}/
+              %p.main-value__title
+                Blindaje para Riesgos Especiales
+              %p.main-general__description
+                Los eventos imprevistos nunca son previsibles y más cuando se trata de riesgos especiales. Sus pertenencias especiales, obras de arte y hasta su seguridad personal deben estar blindadas y protegidas.
+            #exampleModal5.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+              .modal-dialog{:role => "document"}
+                .modal-content
+                  .modal-header
+                    %h5#exampleModalLabel.modal-title.main-value__title Blindaje para Riesgos Especiales
+                    %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+                      %span{"aria-hidden" => "true"} ×
+                  .modal-body
+                    Los eventos imprevistos nunca son previsibles y más cuando se trata de riesgos especiales. Sus pertenencias especiales, obras de arte y hasta su seguridad personal deben estar blindadas y protegidas.
+                  .modal-footer
+        
     %section.main-proposal
       .main-proposal__mask
       .container.padding-top-bottom
-        %h2.main-general__title.main-general__title--white 
+        %h2.main-general__title.main-general__title--white
           Propuesta
         %p.main-proposal__description
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore 
+          Contamos con el aval de xx años de sólida experiencia en el mercado asegurador e innumerables reconocimientos internacionales que respaldan el éxito de nuestra labor.
     %section.main-about
       .container.padding-top-bottom
-        %h2.main-general__title 
+        %h2.main-general__title
           Fundador
         .container-grid
           .main-about__img.main-about__img--large
             .main-general__line.main-general__line--opacity-left
             .main-general__line.main-general__line--solid-left
-            %img{'data-src'=>"assets/img/selective-focus-photo-of-man-holding-black-suit-jacket-1311523.jpg", :alt=>"Imagen misión"}/
+            %img{:alt => "Imagen misión", "data-src" => "assets/img/selective-focus-photo-of-man-holding-black-suit-jacket-1311523.jpg"}/
           .main-about__text
             %h2.main-general__title.main-general__title--no-line
               Nombre y Apellido
             %p.main-general__description
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+              dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod
     %section.main-phrase
       .padding-top-bottom.container
         .main-phrase__text
           %p.main-phrase__title
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore 
+            Nuestros aliados tienen la más alta reputación
           %p.main-general__description
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+            dentro de la industria de seguros internacionales.
     %section.main-associated
       .container.padding-top-bottom
         %h2.main-general__title
           Nuestros Asociados
         %p.main-general__description
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+          Contamos con la garantía y el compromiso de reconocidas corporaciones internacionales de primera línea para que nuestros clientes cuenten con la calidad y responsabilidad en los servicios que entregamos.
+          eirmod tempor invidunt ut
         .main-associated__carousel
           .main-associated__item
             .main-associated__icon
@@ -216,7 +239,7 @@
               %p socio
           .main-associated__item
             .main-associated__icon
-              %p socio 
+              %p socio
     %section.main-handsome
       .main-handsome__text
         .main-general__line.main-general__line--solid-left
@@ -224,38 +247,38 @@
         .main-general__title.main-general__title--white
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr
         %p.main-general__description
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore 
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
         .main-general__container-btn
-          %a.main-general__button{:href=>""}Ver Más
+          %a.main-general__button{:href => ""} Ver Más
     %footer.main-footer
       .main-footer__form.padding-top-bottom
-        %h2.main-general__title.main-general__title--white 
+        %h2.main-general__title.main-general__title--white
           Contáctanos
         %form
-          %input{:type=>"text", :placeholder=>"Nombre"}/
-          %input{:type=>"text", :placeholder=>"Apellido"}/
-          %input{:type=>"text", :placeholder=>"Correo  Electrónico"}/
-          %input{:type=>"text", :placeholder=>"Teléfono"}/
-          %input{:type=>"text", :placeholder=>"Asunto"}/
-          %textarea{:type=>"text", :placeholder=>"Mensaje"}
+          %input{:placeholder => "Nombre", :type => "text"}/
+          %input{:placeholder => "Apellido", :type => "text"}/
+          %input{:placeholder => "Correo  Electrónico", :type => "text"}/
+          %input{:placeholder => "Teléfono", :type => "text"}/
+          %input{:placeholder => "Asunto", :type => "text"}/
+          %textarea{:placeholder => "Mensaje", :type => "text"}
           .main-general__container-btn
-            %a.main-general__button{:href=>""}Ver Más
+            %a.main-general__button{:href => ""} Ver Más
       .main-footer__rrss
         .container-grid.container
           .main-footer__item
-            %a.main-general__button{:href=>""}Contáctanos
-            %a.main-footer__email{:href=>"mailto:loremipsum@Dolor.com"}Loremipsum@Dolor.com
+            %a.main-general__button{:href => ""} Contáctanos
+            %a.main-footer__email{:href => "mailto:loremipsum@Dolor.com"} Loremipsum@Dolor.com
           .main-footer__item
-            %img.main-footer__logo{'data-src'=>'assets/img/Logo-Vectores-WIACapitalleonwhite.png', :alt=>"logo footer"}
+            %img.main-footer__logo{:alt => "logo footer", "data-src" => "assets/img/Logo-Vectores-WIACapitalleonwhite.png"}/
             %ul.main-footer__list
               %li
-                %a{:href=>""}
+                %a{:href => ""}
                   %i.fa.fa-twitter
               %li
-                %a{:href=>""}
+                %a{:href => ""}
                   %i.fa.fa-instagram
               %li
-                %a{:href=>""}
+                %a{:href => ""}
                   %i.fa.fa-linkedin
           .main-footer__item
             %p.main-footer__text
@@ -264,24 +287,23 @@
               lorem Ipsum
       .main-footer__powered
         %p Diseño y Desarrollo por
-        %a{:href=>""}Swipe
+        %a{:href => ""} Swipe
     .main-fixed
       %ul
         %li
-          %a{:href=>""}
+          %a{:href => ""}
             %i.fa.fa-twitter
         %li
-          %a{:href=>""}
+          %a{:href => ""}
             %i.fa.fa-instagram
         %li
-          %a{:href=>""}
+          %a{:href => ""}
             %i.fa.fa-linkedin
-    %script{src: 'assets/js/jquery.min.js' }
+    %script{:src => "assets/js/jquery.min.js"}
     %script{:crossorigin => "anonymous", :integrity => "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"}
     %script{:crossorigin => "anonymous", :integrity => "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", :src => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"}
-    %script{src: 'assets/js/slick.min.js' }
-    %script{src: 'assets/js/setting-slick.js' }
-    %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js' }
-    %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js' }
-    %script{src: 'assets/js/main.js' }
-
+    %script{:src => "assets/js/slick.min.js"}
+    %script{:src => "assets/js/setting-slick.js"}
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"}
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"}
+    %script{:src => "assets/js/main.js"}
