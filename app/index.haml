@@ -1,0 +1,287 @@
+!!!
+%html{ lang: 'en' }
+  %head
+    %meta{ charset: 'UTF-8' }/
+    %meta{ content: 'width=device-width, initial-scale=1.0', name:'viewport' }/
+    %title Wia Capital
+    %link{:crossorigin => "anonymous", :href => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", :integrity => "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", :rel => "stylesheet"}/
+    %link{ rel: 'stylesheet', href:'assets/css/font-awesome.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/font-awesome.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/slick-theme.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/slick.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/main.css' }/
+    %link{ rel: 'stylesheet', href:'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css' }/
+    %link{:href => "assets/img/favicon.png", :rel => "shortcut icon"}/
+    %link{ href:'https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800|Poppins:100,200,300,400,500,600,700,800,900&display=swap',  rel:'stylesheet' }/
+  %body
+    %header.fixed-top.navbar-fixed-js
+      %nav.navbar.navbar-expand-lg
+        .container
+          .main-brand__top
+            .main-brand
+              %a.navbar-brand{ :href => 'index.html' }
+                %img#iso{ :src => 'assets/img/WIACapitaltextblack.png', :alt=>"Logo Wia"}/ 
+          .main-brand__fixed
+            .main-brand
+              %a.navbar-brand{ :href => 'index.html' }
+                %img#iso{ :src => 'assets/img/Logo-Vectores-WIACapital_2019.png', :alt=>"Logo Wia" }/ 
+          .main-brand.brand-responsive
+            %a.navbar-brand{ :href => 'index.html' }
+              %img#iso{ :src => 'assets/img/Logo-Vectores-WIACapital_2019.png', :alt=>"Logo Wia"}/ 
+            %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{ 'data-toggle' => 'offcanvas', :type => 'button' }
+              %span.hamburger-box
+              %span.hamburger-inner
+          .navbar-collapse.offcanvas-collapse
+            %ul.navbar-nav.mr-autos
+              %li.dropdown.nav-item
+                %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Lorem Ipsum
+                -# %ul.dropdown-menu
+                -#   %li
+                -#     %a{:href => "attraction-and-talent-selection.html"} 
+                -#   %li
+                -#     %a{:href => "youth-program.html"} 
+                -#   %li
+                -#     %a{:href => "career-development.html"} 
+                -#   %li
+                -#     %a{:href => "evaluation-and-career.html"} Zona de Clientes
+                -#   %li
+                -#     %a{:href => "inhouse-consultant.html"} 
+                -#   %li
+                -#     %a{:href => "employer-brand.html"} Marca empleadora
+              %li.dropdown.nav-item
+                %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Lorem Ipsum
+                -# %ul.dropdown-menu
+                -#   %li
+                -#     %a{:href => "diversity-and-inclusion.html"} Diversidad e inclusión
+                -#   %li
+                -#     %a{:href => "future-of-work.html"} Futuro del trabajo
+                -#   %li
+                -#     %a{:href => "future-of-education.html"} Futuro de la educación
+                -#   %li
+                -#     %a{:href => "brand-building.html"} Construcción de marca empleadora
+                -#   %li
+                -#     %a{:href => "dream-race.html"} Carrera de los sueños de los jovenes
+              %li.nav-item
+                %a.nav-link{:target=>"_blank", :data-toggle => 'offcanvas', :href => "https://www.elempleo.com/sitios-empresariales/colombia/consultores-organizacionales", :role => "button"}
+                  Lorem Ipsum
+                -# %ul.dropdown-menu
+                -#   %li
+                -#     %a{:href => "index.html"} Media y alta gerencia
+                -#   %li
+                -#     %a{:href => "index.html"} Profesionales
+              %li.dropdown.nav-item
+                %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Lorem Ipsum
+                -# %ul.dropdown-menu
+                -#   %li
+                -#     %a{:href => "career-tips.html"} Consejos de carrera
+                -#   %li
+                -#     %a{:href => "human-management.html"} Gestión humana como aliado estratégico del negocio 
+              %li.nav-item
+                %a.nav-link{:href => 'about.html',:data-toggle => 'offcanvas' } Lorem Ipsum
+
+            -# %ul.main-rrss__responsive
+            -#   %li
+            -#     %img{:src=>'assets/img/facebook@3x.png'}
+            -#   %li
+            -#     %img{:src=>'assets/img/facebook-logo-in-circular-button-outlined-social-symbol_2@3x.png'}
+            -#   %li
+            -#     %img{:src=>'assets/img/social-linkedin-circular-button_5@3x.png'}
+            -#   %li
+            -#     %img{:src=>'assets/img/social-linkedin-circular-button_6@3x.png'}
+    %section.main-banner
+      .main-general__line.main-general__line--opacity
+      .main-general__line.main-general__line--solid
+      .main-banner__content
+        .main-banner__item
+          .main-banner__text
+            .main-banner__title
+              %p.wow.animated.fadeInRight{:style=>"visibility: visible; animation-delay: .s  ;"} 
+                Wia Capital
+            .main-banner__subtitle
+              %p.wow.animated.fadeInRight{:style=>"visibility: visible; animation-delay: .5s  ;"}  
+                Worldwide business 
+          .main-banner__img
+            %img{:src=>"assets/img/man-beach-holiday-woman-39691.png", :alt=>"Imagen Banner"}/
+    %section.main-about
+      .container.padding-top-bottom
+        .container-grid
+          .main-about__text
+            %h2.main-general__title
+              Nuestra Misión
+            %p.main-general__description
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          .main-about__img
+            .main-general__line.main-general__line--opacity-left
+            .main-general__line.main-general__line--solid-left
+            %img{'data-src'=>"assets/img/man-standing-beside-his-wife-teaching-their-child-how-to-1128318@2x.png", :alt=>"Imagen misión"}/
+          .main-about__img
+            .main-general__line.main-general__line--opacity-right
+            .main-general__line.main-general__line--solid-right
+            %img{'data-src'=>"assets/img/family-of-four-walking-at-the-street-2253879.jpg", :alt=>"Imagen visión"}/
+          .main-about__text
+            %h2.main-general__title
+              Nuestra Visión
+            %p.main-general__description
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+    %section.main-value
+      .container.padding-top-bottom
+        %h2.main-general__title
+          Nuestros Valores
+        .main-value__content
+          .main-value__card
+            %img.main-value__img{'data-src'=>"assets/img/respect icon@3x.png", :alt=>"icono valor"}/
+            %p.main-value__title
+              Póliza de Vida
+            %p.main-general__description
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+          .main-value__card
+            %img.main-value__img{'data-src'=>"assets/img/heart icon@3x.png", :alt=>"icono valor"}/
+            %p.main-value__title
+              Póliza de Vida
+            %p.main-general__description
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+          .main-value__card
+            %img.main-value__img{'data-src'=>"assets/img/outline icon@3x.png", :alt=>"icono valor"}/
+            %p.main-value__title
+              Póliza de Vida
+            %p.main-general__description
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+          .main-value__card
+            %img.main-value__img{'data-src'=>"assets/img/outline icon_2@3x.png", :alt=>"icono valor"}/
+            %p.main-value__title
+              Póliza de Vida
+            %p.main-general__description
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+          .main-value__card
+            %img.main-value__img{'data-src'=>"assets/img/insurance-icon@3x.png", :alt=>"icono valor"}/
+            %p.main-value__title
+              Póliza de Vida
+            %p.main-general__description
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+    %section.main-proposal
+      .main-proposal__mask
+      .container.padding-top-bottom
+        %h2.main-general__title.main-general__title--white 
+          Propuesta
+        %p.main-proposal__description
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore 
+    %section.main-about
+      .container.padding-top-bottom
+        %h2.main-general__title 
+          Fundador
+        .container-grid
+          .main-about__img.main-about__img--large
+            .main-general__line.main-general__line--opacity-left
+            .main-general__line.main-general__line--solid-left
+            %img{'data-src'=>"assets/img/selective-focus-photo-of-man-holding-black-suit-jacket-1311523.jpg", :alt=>"Imagen misión"}/
+          .main-about__text
+            %h2.main-general__title.main-general__title--no-line
+              Nombre y Apellido
+            %p.main-general__description
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+    %section.main-phrase
+      .padding-top-bottom.container
+        .main-phrase__text
+          %p.main-phrase__title
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore 
+          %p.main-general__description
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+    %section.main-associated
+      .container.padding-top-bottom
+        %h2.main-general__title
+          Nuestros Asociados
+        %p.main-general__description
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+        .main-associated__carousel
+          .main-associated__item
+            .main-associated__icon
+              %p socio
+          .main-associated__item
+            .main-associated__icon
+              %p socio
+          .main-associated__item
+            .main-associated__icon
+              %p socio
+          .main-associated__item
+            .main-associated__icon
+              %p socio
+          .main-associated__item
+            .main-associated__icon
+              %p socio
+          .main-associated__item
+            .main-associated__icon
+              %p socio
+          .main-associated__item
+            .main-associated__icon
+              %p socio 
+    %section.main-handsome
+      .main-handsome__text
+        .main-general__line.main-general__line--solid-left
+        .main-general__line.main-general__line--opacity-left
+        .main-general__title.main-general__title--white
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+        %p.main-general__description
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore 
+        .main-general__container-btn
+          %a.main-general__button{:href=>""}Ver Más
+    %footer.main-footer
+      .main-footer__form.padding-top-bottom
+        %h2.main-general__title.main-general__title--white 
+          Contáctanos
+        %form
+          %input{:type=>"text", :placeholder=>"Nombre"}/
+          %input{:type=>"text", :placeholder=>"Apellido"}/
+          %input{:type=>"text", :placeholder=>"Correo  Electrónico"}/
+          %input{:type=>"text", :placeholder=>"Teléfono"}/
+          %input{:type=>"text", :placeholder=>"Asunto"}/
+          %textarea{:type=>"text", :placeholder=>"Mensaje"}
+          .main-general__container-btn
+            %a.main-general__button{:href=>""}Ver Más
+      .main-footer__rrss
+        .container-grid.container
+          .main-footer__item
+            %a.main-general__button{:href=>""}Contáctanos
+            %a.main-footer__email{:href=>"mailto:loremipsum@Dolor.com"}Loremipsum@Dolor.com
+          .main-footer__item
+            %img.main-footer__logo{'data-src'=>'assets/img/Logo-Vectores-WIACapitalleonwhite.png', :alt=>"logo footer"}
+            %ul.main-footer__list
+              %li
+                %a{:href=>""}
+                  %i.fa.fa-twitter
+              %li
+                %a{:href=>""}
+                  %i.fa.fa-instagram
+              %li
+                %a{:href=>""}
+                  %i.fa.fa-linkedin
+          .main-footer__item
+            %p.main-footer__text
+              lorem Ipsum
+            %p.main-footer__text
+              lorem Ipsum
+      .main-footer__powered
+        %p Diseño y Desarrollo por
+        %a{:href=>""}Swipe
+    .main-fixed
+      %ul
+        %li
+          %a{:href=>""}
+            %i.fa.fa-twitter
+        %li
+          %a{:href=>""}
+            %i.fa.fa-instagram
+        %li
+          %a{:href=>""}
+            %i.fa.fa-linkedin
+    %script{src: 'assets/js/jquery.min.js' }
+    %script{:crossorigin => "anonymous", :integrity => "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", :src => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"}
+    %script{src: 'assets/js/slick.min.js' }
+    %script{src: 'assets/js/setting-slick.js' }
+    %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js' }
+    %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js' }
+    %script{src: 'assets/js/main.js' }
+

@@ -1,0 +1,484 @@
+.main-banner__content {
+  .slick-prev {
+    z-index: 2;
+    height: 40px;
+    width: 40px;
+    top: 55%;
+    left: 0%;
+    transition: all .5s;
+    background-color: #7f7f7f;
+    width: 44px;
+    height: 78px;
+    cursor: pointer;
+
+    &:before {
+      font-size: 14px;
+      color: $white;
+      content: "\f053";
+      font-family: 'FontAwesome';
+      z-index: 3;
+    }
+
+    &:hover {
+      outline: none;
+      transition: all .5s;
+      background: $black;
+      color: $white;
+    }
+  }
+
+  .slick-next {
+    right: 0%;
+    z-index: 2;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    transition: all .5s;
+
+    top: 55%;
+    background-color: #7f7f7f;
+    width: 44px;
+    height: 78px;
+
+    &:before {
+      font-size: 14px;
+      color: $white;
+      content: "\f054";
+      font-family: 'FontAwesome';
+    }
+
+    &:hover {
+      outline: none;
+      background: $black;
+      color: $white;
+      transition: all .5s;
+
+    }
+  }
+
+  .slick-dots {
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    right: 53%;
+    width: 0%;
+
+    @include respond-to(md) {
+      left: 45%;
+    }
+
+    @include respond-to(sm) {
+      left: 45%;
+    }
+
+    @include respond-to(xs) {
+      left: 35%;
+    }
+
+    .slick-active {
+      button {
+        &:before {
+          color: $dots-color-active;
+          opacity: 0.75;
+          width: 35px;
+          margin: 0;
+        }
+      }
+    }
+
+    li {
+      margin: 0 10px;
+
+      button {
+
+        &:before {
+          color: $dots-color;
+          content: '';
+          height: $dots-size;
+          width: $dots-size;
+          display: inline-block;
+          background: $orange;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: all 300ms ease;
+        }
+
+        &:hover:before,
+        &:focus:before {
+          color: $dots-color-active;
+        }
+      }
+    }
+  }
+}
+
+
+.main-experience__carousel {
+
+  .slick-prev {
+    z-index: 2;
+    height: 40px;
+    width: 40px;
+    top: 55%;
+    right: 45%;
+    transition: all .5s;
+    // background-color: #7f7f7f;
+    width: 44px;
+    height: 78px;
+    cursor: pointer;
+
+    @include respond-to(xs) {
+      left: 0;
+    }
+
+    &:before {
+      font-size: 14px;
+      color: $white;
+      content: url('../img/left-arrow-copy.png');
+      z-index: 3;
+    }
+
+
+    &:hover {
+      outline: none;
+      transition: all .5s;
+      // background: $black;
+      color: $white;
+    }
+  }
+
+  .slick-next {
+    right: 0;
+    z-index: 2;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    transition: all .5s;
+
+    @include respond-to(xs) {
+      right: 0;
+    }
+
+    top: 55%;
+    // background-color: #7f7f7f;
+    width: 44px;
+    height: 78px;
+
+    &:before {
+      font-size: 14px;
+      color: $white;
+      content: url("../img/right-arrow.png");
+      font-family: 'FontAwesome';
+    }
+
+    &:hover {
+      outline: none;
+      // background: $black;
+      color: $white;
+      transition: all .5s;
+
+    }
+  }
+}
+
+// .main-experiencie__item {
+//   .slick-prev {
+//     z-index: 2;
+//     height: 40px;
+//     width: 40px;
+//     top: -20%;
+//     right: 10%;
+//     background-color: transparent;
+//     width: 65px;
+//     height: 64px;
+
+//     @include respond-to(xs) {
+//       right: 10%;
+//     }
+
+//     &:before {
+//       font-size: $arrow-size;
+//       color: $blue;
+//       content: url('../img/left-arrow-copy.png');
+//       font-family: 'FontAwesome';
+//       z-index: 3;
+//     }
+
+//     &:hover {
+//       outline: none;
+//       background: transparent;
+//       color: #656565;
+//     }
+//   }
+
+//   .slick-next {
+//     right: -1%;
+//     z-index: 2;
+//     height: 40px;
+//     width: 40px;
+//     top: -20%;
+//     background-color: transparent;
+//     // border: 1px solid rgba(255, 255, 255, .5);
+//     width: 65px;
+//     height: 64px;
+
+//     &:before {
+//       font-size: $arrow-size;
+//       color: $blue;
+//       content: url('../img/right-arrow.png');
+//       font-family: 'FontAwesome';
+//     }
+
+//     &:hover {
+//       outline: none;
+//       background: transparent;
+//     }
+//   }
+
+//   .slick-dots {
+//     z-index: 2;
+//     display: flex;
+//     position: absolute;
+//     bottom: -30%;
+//     right: 55%;
+//     width: 0%;
+
+//     @include respond-to(md) {
+//       left: 40%;
+//     }
+
+//     @include respond-to(sm) {
+//       left: 35%;
+//     }
+
+//     @include respond-to(xs) {
+//       left: 35%;
+//     }
+
+//     .slick-active {
+//       button {
+//         &:before {
+//           opacity: 0.75;
+//           width: 35px;
+//           margin: 0;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.main-benefits__carousel {
+
+  @include respond-to(xs) {
+    margin-top: 2rem;
+  }
+
+  .slick-prev {
+    z-index: 2;
+    height: 40px;
+    width: 40px;
+    top: 98%;
+    right: 3%;
+    background-color: transparent;
+    width: 65px;
+    height: 64px;
+
+    @include respond-to(xs) {
+      top: 105%;
+    }
+
+    &:before {
+      font-size: $arrow-size;
+      color: $blue;
+      content: "\f053";
+      font-family: 'FontAwesome';
+      z-index: 3;
+    }
+
+    &:hover {
+      outline: none;
+      background: transparent;
+      color: #656565;
+    }
+  }
+
+  .slick-next {
+    right: -5%;
+    z-index: 2;
+    height: 40px;
+    width: 40px;
+    top: 98%;
+    background-color: transparent;
+    width: 65px;
+    height: 64px;
+
+    @include respond-to(xs) {
+      top: 105%;
+    }
+
+    &:before {
+      font-size: $arrow-size;
+      color: $blue;
+      content: "\f054";
+      font-family: 'FontAwesome';
+    }
+
+    &:hover {
+      outline: none;
+      background: transparent;
+    }
+  }
+
+  .slick-dots {
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    bottom: -30%;
+    right: 55%;
+    width: 0%;
+
+    @include respond-to(md) {
+      left: 40%;
+    }
+
+    @include respond-to(sm) {
+      left: 35%;
+    }
+
+    @include respond-to(xs) {
+      left: 35%;
+    }
+
+    .slick-active {
+      button {
+        &:before {
+          opacity: 0.75;
+          width: 35px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.main-models__carousel .slick-dots {
+  bottom: -2rem;
+
+  li button {
+    &:before {
+      height: 14px;
+      background: $blue;
+      content: '' !important;
+      border-radius: 50%;
+      width: 14px;
+    }
+  }
+}
+
+.main-team {
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: $orange;
+    font-size: 34px;
+  }
+
+  .slick-prev {
+    left: -4rem;
+    right: initial;
+
+    @include respond-to(xs) {
+      // right: 2rem;
+      /* bottom: -14px; */
+      right: 6rem;
+      left: inherit;
+      top: 8rem;
+    }
+
+  }
+
+  .slick-next {
+    right: -1rem;
+
+    @include respond-to(xs) {
+      right: 2rem;
+      /* bottom: -14px; */
+      top: 8rem;
+    }
+  }
+}
+
+.main-associated__slider-nav {
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: $orange;
+    font-size: 26px;
+  }
+
+  .slick-prev {
+    left: 2rem;
+    z-index: 1;
+  }
+
+  .slick-next {
+    right: 2rem;
+    z-index: 1;
+  }
+
+}
+
+.main-associated__item {
+  height: 12rem;
+  /* margin: .5rem; */
+  padding: 1rem;
+
+
+}
+
+.main-about__carousel {
+  img.slick-slide.slick-current.slick-active.slick-center {
+    height: 18rem;
+    width: 17rem !important;
+    transform: translateY(-1rem);
+
+    @include respond-to(sm) {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .slick-slide img {
+    width: 15rem;
+
+    @include respond-to(xs) {
+      width: 100%;
+    }
+  }
+
+  .slick-slide.slick-current.slick-active.slick-center img {
+    width: 17rem;
+    position: relative;
+    z-index: 1;
+    left: -1.5rem;
+    top: -1rem;
+
+    @include respond-to(sm) {
+      left: initial;
+      top: initial;
+      width: 100%;
+    }
+  }
+
+
+
+  .slick-list {
+    margin: 0px 35px;
+    padding: 0 !important;
+  }
+
+  .slick-track {
+    padding: 2rem 0;
+  }
+}
