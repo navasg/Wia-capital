@@ -1092,17 +1092,22 @@ button:focus {
 
 @media (min-width: 0px) and (max-width: 767px) {
   .nav-link {
-    color: #fff;
+    color: #fff !important;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .nav-link {
-    color: #fff;
+    color: #fff !important;
   }
 }
 
 .nav-link.fixed-color {
+  color: #fff;
+  transition: .3s ease-in-out;
+}
+
+.nav-link.fixed-color:hover {
   color: #fff;
   transition: .3s ease-in-out;
 }

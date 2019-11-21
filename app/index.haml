@@ -34,20 +34,19 @@
               %span.hamburger-inner
           .navbar-collapse.offcanvas-collapse
             %ul.navbar-nav.mr-autos
-              %li.dropdown.nav-item
-                %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-                  Lorem Ipsum
-              %li.dropdown.nav-item
-                %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-                  Lorem Ipsum
               %li.nav-item
-                %a.nav-link{:data => "offcanvas", :href => "https://www.elempleo.com/sitios-empresariales/colombia/consultores-organizacionales", :role => "button", :target => "_blank"}
-                  Lorem Ipsum
+                %a.nav-link.nav-link-p{:data => "offcanvas", :href => "#about"}
+                  ¿Quiénes somos?
               %li.dropdown.nav-item
-                %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-                  Lorem Ipsum
+                %a.nav-link.nav-link-p{:data => "offcanvas", :href => "#value"}
+                  Valores
               %li.nav-item
-                %a.nav-link{:data => "offcanvas", :href => "about.html"} Lorem Ipsum
+                %a.nav-link.nav-link-p{:data => "offcanvas", :href => "#associated"}
+                  Asociados
+              %li.nav-item
+                %a.nav-link.nav-link-p{:data => "offcanvas", :href => "#contact"}
+                  Contáctanos
+            
     %section.main-banner
       .main-general__line.main-general__line--opacity
       .main-general__line.main-general__line--solid
@@ -62,7 +61,7 @@
                 Worldwide business
           .main-banner__img
             %img{:alt => "Imagen Banner", :src => "assets/img/man-beach-holiday-woman-39691.png"}/
-    %section.main-about
+    %section.main-about#about
       .container.padding-top-bottom
         .container-grid
           .main-about__text
@@ -83,7 +82,7 @@
               Nuestra Visión
             %p.main-general__description
               Somos y seguiremos siendo un equipo de profesionales que lleva un mensaje a toda la familia latinoamericana, y a todo el mundo, de la importancia del blindaje del patrimonio a través de herramientas y opciones que le permitirán sentirse tranquilo al pensar en su futuro global.
-    %section.main-value
+    %section.main-value#value
       .container.padding-top-bottom
         %h2.main-general__title
           Nuestros Valores
@@ -211,7 +210,7 @@
             Nuestros aliados tienen la más alta reputación
           %p.main-general__description
             dentro de la industria de seguros internacionales.
-    %section.main-associated
+    %section.main-associated#associated
       .container.padding-top-bottom
         %h2.main-general__title
           Nuestros Asociados
@@ -250,7 +249,7 @@
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
         .main-general__container-btn
           %a.main-general__button{:href => ""} Ver Más
-    %footer.main-footer
+    %footer.main-footer#contact
       .main-footer__form.padding-top-bottom
         %h2.main-general__title.main-general__title--white
           Contáctanos

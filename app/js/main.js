@@ -8,7 +8,6 @@ wow.init();
 var bLazy = new Blazy({
   selector: 'img' // all images
 });
-
 $(function () {
   'use strict'
 
@@ -16,6 +15,9 @@ $(function () {
     $('.offcanvas-collapse').toggleClass('open')
   })
 })
+
+
+$('#s').attr("placeholder", "Buscar");
 
 // $('.dropdown-toggle').dropdown()
 
@@ -131,17 +133,3 @@ $(document).ready(function () {
     s.parentNode.insertBefore(wf, s);
   })();
 });
-
-
-// $(document).ready(function () {
-//   $(".dropdown").hover(
-//     function () {
-//       $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideDown("8000");
-//       $(this).toggleClass('open');
-//     },
-//     function () {
-//       $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideUp("8000");
-//       $(this).toggleClass('open');
-//     }
-//   );
-// });
